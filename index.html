@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Components Basic</title>
+    <style>
+      h3 {
+        color: coral;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Hello World</h3>
+
+    <user-card
+      name="Thomas Hoover"
+      avatar="https://randomuser.me/api/portraits/men/1.jpg"
+    >
+      <div slot="email">thomas@thomas.com</div>
+      <div slot="phone">111-111-1111</div>
+    </user-card>
+
+    <user-card
+      name="Sarah Hoover"
+      avatar="https://randomuser.me/api/portraits/women/1.jpg"
+    >
+      <div slot="email">sarah@sarah.com</div>
+      <div slot="phone">222-222-2222</div>
+    </user-card>
+
+    <script src="userCard.js"></script>
+  </body>
+</html>
